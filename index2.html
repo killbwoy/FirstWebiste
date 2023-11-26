@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title></title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./css/style2.css"
+</head>
+<body>
+   <!-- Navbar -->
+  <nav>
+    <div class="company-info">
+      <img class="logo" src="./images/Save-Money-Icon.jpg" alt="Logo">
+      <h1 class="company-name">Twój Partner Finansowy</h1>
+    </div>
+
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">O aplikacji</a></li>
+      <li><button type="button" class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#loginModal">Zaloguj</button></li>
+      <li><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">Zarejestruj</button></li>
+    </ul>
+
+    <button class="burger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </button>
+
+  </nav>
+
+<!-- Welcome Section -->
+<section id="Welcome">
+  <div class="title">
+    <div class="p-1 text-center">
+      <div class="container py-2">
+        <h2 class="text-body-emphasis1">Budżet osobisty</h2>
+        <p class="quote col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+          <i>"Choćbyś nie wiem ile zarobił, nie zarobiłeś ani centa, jeżeli nic z
+          tego nie odłożyłeś. Jeśli od razu wydajesz wszystko, co zarobiłeś,
+          to jesteś tylko maszyną, która pracuje dla kogoś innego. Twoje
+          oszczędności to jest właśnie to, co zrobiłeś dla samego siebie, bo
+          jedyna rzecz, którą tak naprawdę warto kupić, to twój własny czas.
+          Pamiętaj o tym" -</i> by William Wharton<br><br>
+        </p>
+      </div>
+    </div>
+  </div>
+
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="px-3 text-center">
+        <h2 class="display-4 fw-bold text-body-emphasis-h1">Zadbaj o własne finanse, realizuj swoje marzenia: <span><u>Zacznij już dziś !</u></span></h2><br><br><br><br>
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+         
+          <div class="col-lg-6">
+            <p class="lead">Dobrze opracowany budżet domowy to PLAN, który pomaga świetnie wykorzystać zarabiane przez nas pieniądze i znacznie szybciej realizować cele i marzenia. To proste i bardzo skuteczne narzędzie, które pomaga <i>powiedzieć naszym pieniądzom, dokąd mają iść, zamiast się zastanawiać, gdzie się rozeszły</i> - by John C. Maxwell.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" data-bs-toggle="modal" data-bs-target="#signupModal"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+                <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+              </svg> Utwórz konto</button>
+            </div>
+          </div>
+           <div class="col-10 col-sm-8 col-lg-6">
+            <img src="./images/spend-money.jpg" class="d-block mx-lg-auto img-fluid" alt="Spend Money" height="500" loading="lazy">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Sign-up Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signupModalLabel">Utwórz konto</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Imię</label>
+              <input type="text" class="form-control" id="name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Hasło</label>
+              <input type="password" class="form-control" id="password">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zamknij</button>
+          <button type="button" class="btn btn-primary">Zarejestruj</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Zaloguj</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="username" class="form-label">Nazwa Użytkownika</label>
+              <input type="text" class="form-control" id="username">
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Hasło</label>
+              <input type="password" class="form-control" id="password">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zamknij</button>
+          <button type="button" class="btn btn-primary">Zaloguj</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Featured Section -->
+
+ <!--Footer-->
+ <div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-5">
+    <p class="col-md-4 mb-0 text-body-secondary">© 2023 by Michał Kuta</p>
+
+    <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+      <img src="./images/swinka.png" height=60>
+    </a>
+
+    <ul class="nav col-md-4">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body">Features</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body">O aplikacji</a></li>
+    </ul>
+  </footer>
+</div>
+
+
+  
+<script>
+
+  const mobileNav = document.querySelector('ul');
+  const burgerIcon = document.querySelector('.burger');
+
+  burgerIcon.addEventListener('click', function() {
+    mobileNav.classList.toggle('active');
+    burgerIcon.classList.toggle('active');
+  })
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
